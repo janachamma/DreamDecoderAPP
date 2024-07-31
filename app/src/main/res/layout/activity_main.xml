@@ -31,6 +31,8 @@
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="17dp"
         android:text="@string/login"
+        android:onClick="openLoginActivity"
+
         app:layout_constraintBottom_toTopOf="@+id/SignUpButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +46,8 @@
         android:layout_marginEnd="157dp"
         android:layout_marginBottom="188dp"
         android:text="@string/sign_up"
+        android:onClick="openSignUpActivity"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"

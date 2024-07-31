@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dreampatterntracking"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDreamJournal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dream_journal"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etDreamDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dream_description"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/etDreamDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dream_date"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/etDreamEmotions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dream_emotions"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/etDreamSymbols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dream_symbols"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/saved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Dream" />
+
+    <Button
+        android:id="@+id/Backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+
+</LinearLayout>
+

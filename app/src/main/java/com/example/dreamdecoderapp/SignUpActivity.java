@@ -1,6 +1,8 @@
 package com.example.dreamdecoderapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,14 @@ public class SignUpActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+        public void submitSignUp(View view) {
+            // Here you can add logic for the sign-up process if needed
+
+            // Navigate to LoginActivity after submission
+            Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
+
+
 }

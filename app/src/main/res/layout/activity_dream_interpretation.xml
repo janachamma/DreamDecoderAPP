@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpic">
+
+    <!-- Header with logo and app name -->
+
+
+    <TextView
+        android:id="@+id/enter_dream_label"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/enter_your_dreamhere"
+        android:textColor="#4B0082"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dream_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DreamDecoder" />
+
+    <EditText
+        android:id="@+id/dream_input"
+        android:layout_width="300dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="288dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/type_your_dream_here"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_dream_label"
+        tools:ignore="Autofill,TextFields" />
+
+    <Button
+        android:id="@+id/analyze_button"
+        android:layout_width="123dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="116dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/Analyze"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dream_input" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="91dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/back"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/DreamDecoder"
+        android:layout_width="271dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="120dp"
+        android:text="Dream Decoder"
+        android:textColorLink="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/enter_dream_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
