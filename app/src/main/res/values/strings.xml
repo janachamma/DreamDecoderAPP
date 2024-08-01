@@ -27,6 +27,9 @@
     <string name="save_dream">Save Dream</string>
     <string name="pattern_recognition">pattern_recognition</string>
     <string name="pattern_analysis_placeholder" />
+    <string name="dream_descriptions">Dream Description</string>
+    <string name="dream_interpretation_will_be_displayed_here">Dream interpretation will be displayed here.</string>
+    <string name="Back">Back</string>
     <string-array name="options">
         <item>Dream Interpretation </item>
         <item>Journaling </item>

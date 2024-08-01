@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/etDreamDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dream Description" />
+
+    <TextView
+        android:id="@+id/etDreamEmotions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dream Emotions" />
+
+    <TextView
+        android:id="@+id/etDreamSymbols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dream Symbols" />
+</LinearLayout>

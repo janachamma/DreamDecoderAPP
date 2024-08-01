@@ -28,7 +28,10 @@ public class DreamInterpretationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String dreamText = dreamInput.getText().toString();
+                Intent intent = new Intent(DreamInterpretationActivity.this, Analysis.class);
+                intent.putExtra("DREAM_TEXT", dreamText);
 
+                startActivity(intent);
                 // Perform the interpretation on the dream text (placeholder)
                 String interpretedText = interpretDream(dreamText);
 
